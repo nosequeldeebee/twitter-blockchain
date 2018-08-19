@@ -26,6 +26,8 @@ type Tweet struct {
 var config *oauth1.Config
 var token *oauth1.Token
 
+const pages = 18
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
@@ -71,7 +73,7 @@ func handleGetTweets(w http.ResponseWriter, r *http.Request) {
 	httpClient := config.Client(oauth1.NoContext, token)
 
 Outer:
-	for i := 0; i < 18; i++ {
+	for i := 0; i < pages; i++ {
 		// example Twitter API request
 		path := fmt.Sprintf("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=%v&include_rts=false&count=200%v", userID, maxIDQuery)
 		if strings.Contains(path, "favicon.ico") {
