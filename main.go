@@ -77,7 +77,7 @@ func handleGetTweets(w http.ResponseWriter, r *http.Request) {
 Outer:
 	for i := 0; i < pages; i++ {
 		// Twitter API request
-		// userID is the Twitter hand
+		// userID is the Twitter handle
 		// maxIDQuery is the last result on each page, so the API knows what the next page is
 		path := fmt.Sprintf("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=%v&include_rts=false&count=200%v", userID, maxIDQuery)
 		if strings.Contains(path, "favicon.ico") { // API returns this so skip it, not needed
