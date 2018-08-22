@@ -3,7 +3,7 @@
 # twitter-blockchain
 Build your own Blockchain Twitter Recorder in Go
 
-Read this tutorial first.
+Read this [tutorial](https://medium.com/@mycoralhealth/build-your-own-blockchain-twitter-recorder-in-go-4fa504e912c3) first.
 
 ### Setup
 
@@ -23,7 +23,4 @@ Read this tutorial first.
 
 ![ScreenShot](https://s15.postimg.cc/jiv630cor/Screen_Shot_2018-08-20_at_9.21.43_AM.png)
 
-- Enter the hash as the block data as seen in the tutorial
-
-
-
+- Enter the hash as the block data as seen in the [tutorial](https://medium.com/@mycoralhealth/build-your-own-blockchain-twitter-recorder-in-go-4fa504e912c3)
